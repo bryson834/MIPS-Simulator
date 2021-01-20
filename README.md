@@ -9,6 +9,10 @@
   - g++ -c CPU.cpp
   - g++ -c Simulator.cpp
   
+  OR
+  
+  - g++ -c ALU.cpp Memory.cpp CPU.cpp Simulator.cpp
+  
 3. Create an executable for testing (simulator)
   - g++ ALU.o CPU.o Memory.o Simulator.o -o simulator
   
@@ -28,7 +32,7 @@ Extra Work:
 If you want to use the disassembler, you can run the following commands:
 
   - g++ Disassembler.cpp
-  - g++ -o Disassebler Disassembler.cpp
+  - g++ -o Disassembler Disassembler.cpp
   - ./Disassembler test.mips
                or
   - ./Disassembler ".mips test file"
